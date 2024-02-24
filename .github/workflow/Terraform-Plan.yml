@@ -1,0 +1,13 @@
+name: "Terraform-Plan-Infra-Plan"
+
+on:
+  push:
+    branches:
+      - Developer
+  
+jobs:
+  terraform:
+    name: "Terraform"
+    runs-on: ubuntu-latest
+    env:
+      
